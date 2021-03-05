@@ -1045,7 +1045,7 @@ void setup() {
       " | Author: " STRING_CONFIG_H_AUTHOR
     );
   #endif
-  SERIAL_ECHO_MSG("Compiled: " __DATE__);
+  SERIAL_ECHO_MSG("Compiled: " __DATE__ " at " __TIME__);
   SERIAL_ECHO_MSG(STR_FREE_MEMORY, freeMemory(), STR_PLANNER_BUFFER_BYTES, (int)sizeof(block_t) * (BLOCK_BUFFER_SIZE));
 
   // Init buzzer pin(s)
